@@ -54,6 +54,14 @@ namespace TeteesLab4.Models
                         Cote = "Sein droit",
                         Technique = "soir, tranquille",
                         Commentaire = "Demander conseil a une personne experimente en cas probleme"
+                    },
+                    new Tetees
+                    {
+                        Title = "Fin de soirée",
+                        Heure = DateTime.Parse("20:00"),
+                        Cote = "Donne Biberon",
+                        Technique = "Doit etre tres delicat et prendre son temps ",
+                        Commentaire = "Demande conseil a sa femme"
                     }
                 );
                 context.SaveChanges();
