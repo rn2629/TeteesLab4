@@ -55,7 +55,7 @@ namespace TeteesLab4.Models
                         Technique = "soir, tranquille",
                         Commentaire = "Demander conseil a une personne experimente en cas probleme"
                     },
-                    new Tetees
+                    new Tetees /**Test**/
                     {
                         Title = "Fin de soirée",
                         Heure = DateTime.Parse("20:00"),
