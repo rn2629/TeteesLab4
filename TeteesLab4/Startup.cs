@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using TeteesLab4.Models;
 
 namespace TeteesLab4
 {
@@ -22,6 +24,9 @@ namespace TeteesLab4
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            services.AddDbContext<TeteesLab4Context>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("TeteesLab4Context")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
